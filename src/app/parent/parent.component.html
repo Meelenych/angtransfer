@@ -1,6 +1,21 @@
 <h2>{{ myPost.title }}</h2>
 <p>{{ myPost.text }}</p>
 
+<hr />
+<!-- <p>Model: {{ myPost.car?.model }}</p>
+<p>Yeat: {{ myPost.car?.year }}</p>
+<hr /> -->
+<div>
+  <input type="text" name="title" placeholder="Car make" [(ngModel)]="title" />
+  <input
+    type="text"
+    name="text"
+    placeholder="Car description"
+    [(ngModel)]="text"
+  />
+  <button type="submit" (click)="onSubmit()">Add</button>
+</div>
+
 <app-child></app-child>
 <app-childtwo></app-childtwo>
 <hr />

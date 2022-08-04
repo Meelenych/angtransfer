@@ -5,6 +5,10 @@ export interface Post {
   title: string,
   text: string,
   id?: number
+  car?: {
+    model: string,
+    year: string
+  }
 }
 
 @Component({
@@ -19,4 +23,10 @@ export class AppComponent {
     { title: 'BMW', text: "A German car brand", id: 1 },
     { title: 'Ford', text: "An American car brand", id: 2 },
   ]
+
+  updatePosts(post: Post) {
+
+    this.posts.unshift(post)
+    console.log("post", post)
+  }
 }

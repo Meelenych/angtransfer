@@ -1,1 +1,5 @@
-<app-parent *ngFor="let post of posts" [myPost]="post"></app-parent>
+<app-parent
+  *ngFor="let post of posts"
+  [myPost]="post"
+  (onAdd)="updatePosts($event)"
+></app-parent>

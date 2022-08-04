@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { ChildtwoComponent } from './parent/childtwo/childtwo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ChildtwoComponent } from './parent/childtwo/childtwo.component';
     ChildtwoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
